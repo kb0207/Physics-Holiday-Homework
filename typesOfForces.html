@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Karan Bhura" />
+  <link rel="icon" href="\icons\forces.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="icons/forces.ico" type="image/x-icon">
+
+  <title>Types Of Forces</title>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .def {
+      padding-top: 3rem !important;
+      margin-top: 3rem !important;
+      margin-bottom: 1.5rem !important;
+      font-size: 1.2rem;
+      font-weight: 50;
+      line-height: 1.5;
+      font-weight: 500 !important;
+      text-align: justify;
+    }
+
+    .heading {
+      padding-bottom: 0.5rem !important;
+      border-bottom: 1px solid #dee2e6 !important;
+      color: #0d6efd !important;
+      text-align: center !important;
+    }
+  </style>
+
+  <style>
+    :root {
+      --bs-primary: #0d6efd;
+      --bs-light: #f8f9fa;
+      --bs-dark: #212529;
+      --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+      --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+      --bs-gradient: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.15),
+          rgba(255, 255, 255, 0));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .btn:hover {
+      color: #212529;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-primary:hover {
+      color: #fff;
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+    }
+
+    .btn-outline-primary {
+      color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-outline-primary:hover {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+
+    .btn-group-lg>.btn,
+    .btn-lg {
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      border-radius: 0.3rem;
+    }
+
+    .h2,
+    .h4,
+    h2,
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .h2,
+    h2 {
+      font-size: calc(1.325rem + 0.9vw);
+    }
+
+    @media (min-width: 1200px) {
+
+      .h2,
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .h4,
+    h4 {
+      font-size: calc(1.275rem + 0.3vw);
+    }
+
+    @media (min-width: 1200px) {
+
+      .h4,
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 992px) {
+      .container {
+        max-width: 960px;
+      }
+    }
+
+
+    .row {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(var(--bs-gutter-y) * -1);
+      margin-right: calc(var(--bs-gutter-x) / -2);
+      margin-left: calc(var(--bs-gutter-x) / -2);
+    }
+
+    .row>* {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x) / 2);
+      padding-left: calc(var(--bs-gutter-x) / 2);
+      margin-top: var(--bs-gutter-y);
+    }
+
+    .col {
+      flex: 1 0 0%;
+    }
+
+    .row-cols-1>* {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .g-3,
+    .gx-3 {
+      --bs-gutter-x: 1rem;
+    }
+
+    .g-3,
+    .gy-3 {
+      --bs-gutter-y: 1rem;
+    }
+
+    .g-4,
+    .gx-4 {
+      --bs-gutter-x: 1.5rem;
+    }
+
+    .g-4,
+    .gy-4 {
+      --bs-gutter-y: 1.5rem;
+    }
+
+
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+    }
+
+    .overflow-hidden {
+      overflow: hidden !important;
+    }
+
+    .shadow {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .h-100 {
+      height: 100% !important;
+    }
+
+    .flex-column {
+      flex-direction: column !important;
+    }
+
+    .align-items-stretch {
+      align-items: stretch !important;
+    }
+
+    .p-5 {
+      padding: 3rem !important;
+    }
+
+    .px-4 {
+      padding-right: 1.5rem !important;
+      padding-left: 1.5rem !important;
+    }
+
+    .py-3 {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+
+    .py-5 {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+
+    .text-dark {
+      color: #212529 !important;
+    }
+
+    .text-light {
+      color: #f8f9fa !important;
+    }
+
+    .bg-white {
+      background-color: #fff !important;
+    }
+  </style>
+
+  <style>
+    .rounded-5 {
+      border-radius: 1rem;
+    }
+
+    .card-cover {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .img-contain {
+      background-size: contain !important;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container px-4 py-3">
+      <h2 class="heading">Force</h2>
+      <!-- <a href="#" class="btn btn-primary"> Home Page </a> -->
+      <div>
+        <div>
+          <p class="def">
+            A force is an effort that changes the state of an object at rest
+            or at motion. It can change an object's direction and velocity.
+            Force can also change the shape and size of an object.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="b-example-divider"></div> -->
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="heading">Types Of Forces</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card h-100 overflow-hidden text-dark bg-white rounded-5"
+            style="background-image: url('./images/Force/')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow">
+              <h4 class="heading">CONTACT FORCE</h4>
+              <p class="def">
+                Contact forces: Force that arises with the contact of 2 or
+                more objects involved. Examples: Muscular force and Frictional
+                Force
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-dark
+                bg-white
+                rounded-5
+                shadow
+                img-contain
+              " style="background-image: url('./images/Force/muscular.gif')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow">
+              <h4>MUSCULAR FORCE</h4>
+              <p class="def">
+                Muscular force is the type of force wherein we use our
+                physical strength to change the state of motion of an object.
+                Examples: Man pushing a car, Bullocks pulling a cart of load,
+                Cycling, Weight Lifting
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-dark
+                bg-white
+                rounded-5
+                shadow
+              " style="background-image: url('./images/Force/friction.gif')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow">
+              <h4>FRICTIONAL FORCE</h4>
+              <p class="def">
+                Frictional Force is a force that acts on all moving objects by
+                the surface which it is in contact with. For example: A ball
+                rolling on the ground encounters friction by the ground
+                surface and it eventually comes to a halt. When the rowing of
+                the boat has stopped, the boat comes to a stop because of the
+                frictional force exerted by water on it. The Frictional force
+                is always in the direction opposite to the applied force.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 overflow-hidden text-dark bg-white rounded-5"
+            style="background-image: url('./images/Force/')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow">
+              <h4 class="heading">NON-CONTACT FORCE</h4>
+              <p class="def">
+                Forces that arise without the contact of 2 or more objects
+                involved. Examples: Magnetic Force, Electrostatic Force,
+                Gravitational force.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-dark
+                bg-white
+                rounded-5
+                shadow
+                img-contain
+              " style="background-image: url('./images/Force/magnet.gif')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow">
+              <h4>MAGNETIC FORCE</h4>
+              <p class="def">
+                Magnetic Force is a force that attracts certain metal objects
+                (like iron and iron filings) towards a magnet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-dark
+                bg-white
+                rounded-5
+                shadow
+                img-contain
+              " style="background-image: url('./images/Force/electro.gif')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow">
+              <h4>ELECTROSTATIC FORCE</h4>
+              <p class="def">
+                Electrostatic force is the force exerted by a charged body on
+                another charged or uncharged body. Examples: Take a comb and
+                brush it on a hair 3-4 times and then take it near some small
+                bits of paper. Do not touch the comb with the paper. The bits
+                of paper would get attracted to the comb. This is because the
+                comb is charged because of the rubbing on your hair and it
+                attracts uncharged objects like paper.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-light
+                bg-white
+                rounded-5
+                shadow
+              " style="background-image: url('./images/Force/gravity.gif')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-light text-shadow">
+              <h4>GRAVITATIONAL FORCE</h4>
+              <p class="def">
+                Gravitational force is a force exerted by the earth on all
+                objects on it. When a ball is thrown up, it falls to the
+                ground because of gravitational force. The water from a tap
+                always flows downwards because of gravitational force.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr style="height: 0.1px;border-width:0.1px;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)"><br>
+        <a type="button" href="./index.html" class="w-100 btn btn-lg btn-outline-primary" target="_self">Home</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
