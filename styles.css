@@ -331,7 +331,7 @@ h5 {
   color: black;
 }
 
-bd-placeholder-img {
+.bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
   -webkit-user-select: none;
@@ -361,6 +361,7 @@ body {
   overflow: hidden;
   color: rgba(0, 0, 0, 0.7);
   position: relative;
+  animation: animated-text 1.8s steps(30, end) 1s 1 normal both;
 }
 
 #border {
@@ -368,15 +369,9 @@ body {
   position: absolute;
   right: -7px;
   width: 27px;
-}
-
-#karan {
-  animation: animated-text 1.8s steps(30, end) 1s 1 normal both;
-}
-
-#border {
   animation: animated-cursor 1.12s steps(30, end) infinite;
 }
+
 
 @keyframes animated-text {
   from {
